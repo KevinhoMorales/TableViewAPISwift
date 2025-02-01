@@ -103,11 +103,20 @@
                                     <outlet property="delegate" destination="ozB-5F-cdM" id="smw-ye-IxP"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6el-my-bZ8">
+                                <rect key="frame" x="162.5" y="298.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hhh-8s-qsB"/>
+                                    <constraint firstAttribute="width" constant="50" id="Nxc-tO-3hN"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Buo-6O-fOc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6el-my-bZ8" firstAttribute="centerX" secondItem="eK9-EU-8xV" secondAttribute="centerX" id="3KI-aG-ztp"/>
                             <constraint firstItem="q4l-Sl-wJ0" firstAttribute="top" secondItem="oz7-li-Yof" secondAttribute="bottom" constant="8" id="4gz-Di-vNf"/>
+                            <constraint firstItem="6el-my-bZ8" firstAttribute="centerY" secondItem="eK9-EU-8xV" secondAttribute="centerY" id="E72-HU-biP"/>
                             <constraint firstItem="q4l-Sl-wJ0" firstAttribute="bottom" secondItem="Buo-6O-fOc" secondAttribute="bottom" id="Eoa-KA-YhE"/>
                             <constraint firstItem="oz7-li-Yof" firstAttribute="top" secondItem="Buo-6O-fOc" secondAttribute="top" constant="16" id="FTO-ce-qUW"/>
                             <constraint firstItem="q4l-Sl-wJ0" firstAttribute="trailing" secondItem="Buo-6O-fOc" secondAttribute="trailing" id="S6t-5y-q8r"/>
@@ -118,6 +127,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8dh-6A-yYM"/>
                     <connections>
+                        <outlet property="loadingActivityIndicator" destination="6el-my-bZ8" id="Aj7-e4-mWu"/>
                         <outlet property="tableView" destination="q4l-Sl-wJ0" id="drZ-R2-hGL"/>
                     </connections>
                 </viewController>

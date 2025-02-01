@@ -9,32 +9,68 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="MiPrimerProyecto" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="MiPrimerProyecto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aK-cp-r9c">
-                        <rect key="frame" x="16" y="8" width="288" height="28"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zHG-4V-gqy">
+                        <rect key="frame" x="16" y="8" width="288" height="124"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y5K-Fw-hxA">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="124"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OI9-yx-dcj">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="124"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ut voluptatem illum ea doloribus itaque eos" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dM-0y-HF1">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="P1z-qy-GeE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-3I-Hsb">
+                                                <rect key="frame" x="0.0" y="50" width="230" height="74"/>
+                                                <string key="text">voluptates quo voluptatem facilis iure occaecati\nvel assumenda rerum officia et\nillum perspiciatis ab deleniti\nlaudantium repellat ad ut et autem reprehenderit</string>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:  100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fu-iB-tHw">
+                                        <rect key="frame" x="238" y="0.0" width="50" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="jKH-4e-w7U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9aK-cp-r9c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="090-64-mdE"/>
-                    <constraint firstAttribute="trailing" secondItem="9aK-cp-r9c" secondAttribute="trailing" constant="16" id="XHD-5c-ciH"/>
-                    <constraint firstAttribute="bottom" secondItem="9aK-cp-r9c" secondAttribute="bottom" constant="8" id="fap-MP-XdN"/>
-                    <constraint firstItem="9aK-cp-r9c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lae-N4-PMQ"/>
+                    <constraint firstAttribute="trailing" secondItem="zHG-4V-gqy" secondAttribute="trailing" constant="16" id="CSY-5u-hz6"/>
+                    <constraint firstItem="zHG-4V-gqy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Jke-1v-P1j"/>
+                    <constraint firstItem="zHG-4V-gqy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Wj8-Uy-wjv"/>
+                    <constraint firstAttribute="bottom" secondItem="zHG-4V-gqy" secondAttribute="bottom" constant="8" id="hpJ-kt-4yu"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="titleLabel" destination="9aK-cp-r9c" id="Rvb-gF-MrT"/>
+                <outlet property="bodyLabel" destination="ucq-3I-Hsb" id="O7B-H1-s8k"/>
+                <outlet property="id" destination="5fu-iB-tHw" id="xBV-C2-WaG"/>
+                <outlet property="titleLabel" destination="2dM-0y-HF1" id="Rp9-RX-OAK"/>
             </connections>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <point key="canvasLocation" x="144" y="26"/>
         </tableViewCell>
     </objects>
 </document>
